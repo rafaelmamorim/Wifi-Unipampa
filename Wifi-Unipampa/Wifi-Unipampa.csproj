@@ -23,8 +23,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.2.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -69,6 +69,11 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ManagedWifi, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\ManagedWifi.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -124,9 +129,9 @@
     <Content Include="imagens\logo_stic-2.png" />
     <Content Include="imagens\wifi-256.ico" />
     <None Include="imagens\wifi-256.png" />
-    <None Include="Referencias.md" />
     <None Include="Resources\WLANSetEAPUserDatax86.exe" />
     <None Include="Resources\WLANSetEAPUserDatax64.exe" />
+    <None Include="Resources\ManagedWifi.dll" />
     <Content Include="wifi-256.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -140,14 +145,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\GITHUB-managed-Wifi-API\ManagedWifi.csproj">
-      <Project>{6aa425c9-ea6a-4b01-aaed-5ff122e8b663}</Project>
-      <Name>ManagedWifi</Name>
-      <Private>True</Private>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

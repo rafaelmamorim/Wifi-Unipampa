@@ -71,6 +71,16 @@ namespace Wifi_Unipampa.Properties {
         }
         
         /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        internal static byte[] ManagedWifi {
+            get {
+                object obj = ResourceManager.GetObject("ManagedWifi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
         /// </summary>
         internal static System.Drawing.Icon wifi_256 {

@@ -44,12 +44,12 @@ namespace Wifi_Unipampa
             try
             {
                 File.Delete(Path.Combine(diretorioPrograma, "user_cred.xml"));
-                File.Delete(wLanSetupUserDataEXE);
+                //File.Delete(wLanSetupUserDataEXE);
                 saida = true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message.ToString());
+                MessageBox.Show("Ocorreu um erro ao tentar excluir um dos arquivos temporários","Erro ao excluir arquivo",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 throw;
             }
             return saida;
@@ -104,7 +104,6 @@ namespace Wifi_Unipampa
 
         private void buttonConfigurar_Click(object sender, EventArgs e)
         {
-            //excluirArquivos();
 
             #region  determinando versão do SO  e extraindo executavel do Resources
             /*if (System.Environment.Is64BitOperatingSystem) 
@@ -126,7 +125,7 @@ namespace Wifi_Unipampa
                 return;
             } else {*/
 
-                WlanClient client = new WlanClient();
+            WlanClient client = new WlanClient();
                 if (client.Interfaces.Count() == 0)
                 {
                     MessageBox.Show("Nenhum dispositivo de rede sem fio ativo encontrado neste equipamento", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);

@@ -1,6 +1,6 @@
 ﻿# Referências
 
-### Icone: 
+### Ícone: 
 - https://www.iconsdb.com/green-icons/wifi-icon.html
 
 ### WLANSetEAPUserData: Windows helper utility to set user data for a given WLAN profile
