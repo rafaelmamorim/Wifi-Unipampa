@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // conjunto de atributos. Altere estes valores de atributo para modificar as informações
 // associada a um assembly.
 [assembly: AssemblyTitle("Wifi-Unipampa")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Este programa tem o objetivo de auxiliar os usuários na configuração da rede sem fio unipampa")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Universidade Federal do Pampa")]
 [assembly: AssemblyProduct("Wifi-Unipampa")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // É possível especificar todos os valores ou usar como padrão os Números de Build e da Revisão
 // utilizando o "*" como mostrado abaixo:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.1.0.0")]
-[assembly: AssemblyFileVersion("1.1.0.0")]
+[assembly: AssemblyVersion("1.1.0.1")]
+[assembly: AssemblyFileVersion("1.1.0.1")]

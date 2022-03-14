@@ -29,16 +29,16 @@ namespace Wifi_Unipampa
     public partial class FormPrincipal : Form
     {
         public string diretorioPrograma { get; set; }
-        public string wLanSetupUserDataEXE { get; set; }
+        //public string wLanSetupUserDataEXE { get; set; }
 
         public FormPrincipal()
         {
             InitializeComponent();
             diretorioPrograma =  AppDomain.CurrentDomain.BaseDirectory;
-            wLanSetupUserDataEXE = Path.Combine(diretorioPrograma, "WLANSetEAPUserData.exe");
+            //wLanSetupUserDataEXE = Path.Combine(diretorioPrograma, "WLANSetEAPUserData.exe");
         }
 
-        public Boolean excluirArquivos()
+        /*public Boolean excluirArquivos()
         {
             Boolean saida = false;
             try
@@ -53,7 +53,7 @@ namespace Wifi_Unipampa
                 throw;
             }
             return saida;
-        }
+        }*/
 
         public string mensagemSetEAPUserData(int codigoSaida)
         {
@@ -104,17 +104,17 @@ namespace Wifi_Unipampa
 
         private void buttonConfigurar_Click(object sender, EventArgs e)
         {
-            excluirArquivos();
+            //excluirArquivos();
 
             #region  determinando versão do SO  e extraindo executavel do Resources
-            if (System.Environment.Is64BitOperatingSystem) 
+            /*if (System.Environment.Is64BitOperatingSystem) 
             {
                 File.WriteAllBytes(wLanSetupUserDataEXE, Wifi_Unipampa.Properties.Resources.WLANSetEAPUserDatax64);
             }
             else
             {
                 File.WriteAllBytes(wLanSetupUserDataEXE, Wifi_Unipampa.Properties.Resources.WLANSetEAPUserDatax86);
-            }
+            }*/
             #endregion
 
             /* Bloco comentado pois função de gravar no SO usuário e senha não funcionou como deveria
@@ -237,7 +237,7 @@ namespace Wifi_Unipampa
                     catch (Exception)
                     {
                         labelSituacao.Text = "Não foi permitido remover a rede unipampa existente";
-                        excluirArquivos();
+                        //excluirArquivos();
                         return;
                     }
 
@@ -266,16 +266,16 @@ namespace Wifi_Unipampa
                     labelSituacao.Text = "Tentado conectar a rede Unipampa";
                     wlanIface.Connect(Wlan.WlanConnectionMode.Profile, Wlan.Dot11BssType.Any, nomeRede);
 
-                    if (!excluirArquivos())
+                    /*if (!excluirArquivos())
                     {
                         MessageBox.Show("Rede configurada com sucesso. Porém, ocorreu um erro ao excluir arquivos temporários. Entre em contato com o STIC do seu Campus", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    } else {
+                    } else {*/
                         MessageBox.Show(" Rede sem fio unipampa configurada com sucesso. \n "+
                             "Ao fazer a primeira conexão à rede unipampa, será " + 
                             "necessário digitar seu usuário e senha institucional.\n\n" + 
                             "Caso necessite trocar a senha, acesse o site http://www.unipampa.edu.br/servicos", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         labelSituacao.Text = "";
-                    }
+                    //}
                 }
             //}
         }
@@ -283,7 +283,7 @@ namespace Wifi_Unipampa
 
         private void buttonFechar_Click(object sender, EventArgs e)
         {
-            excluirArquivos();
+            //excluirArquivos();
             Application.Exit();
         }
 
@@ -304,7 +304,7 @@ namespace Wifi_Unipampa
 
         private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
-            excluirArquivos();
+            //excluirArquivos();
         }
     }
 }

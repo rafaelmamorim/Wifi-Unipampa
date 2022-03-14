@@ -124,7 +124,7 @@
     <Content Include="imagens\logo_stic-2.png" />
     <Content Include="imagens\wifi-256.ico" />
     <None Include="imagens\wifi-256.png" />
-    <Content Include="Referencias.txt" />
+    <None Include="Referencias.md" />
     <None Include="Resources\WLANSetEAPUserDatax86.exe" />
     <None Include="Resources\WLANSetEAPUserDatax64.exe" />
     <Content Include="wifi-256.ico" />
