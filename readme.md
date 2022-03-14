@@ -13,11 +13,10 @@ Este programa tem o objetivo de auxiliar os usuários na configuração da rede 
 * .Net Framework 4.6 instalado. Caso necessário faça download do pacote em site https://www.microsoft.com/pt-br/download/details.aspx?id=48137
 
 # Modo de utilização
-* Faça download clicando em https://github.com/rafaelmamorim/Wifi-Unipampa/releases/download/1.1/Wifi-Unipampa.zip
-* Extrair todos os arquivos em uma pasta
-* Executar o arquivo wifi-unipampa.exe 
+* Faça download do ultimo release disponível em https://github.com/rafaelmamorim/Wifi-Unipampa/releases
+* Executar o arquivo wifi-unipampa.exe (se baixado a versão .ZIP, descompactar antes)
 * Clicar no botão "Configurar rede sem fio"
-* Ao chegar em área com disponibilidade da rede unipampa:
+* Ao chegar em área com disponibilidade da rede sem fio da Unipampa:
 -- Na área de trabalho, clique no ícone de rede, próximo ao relógio, e então na rede “unipampa”.
 -- Quando solicitado, digite seu ​ usuário e senha institucional​.
 -- A configuração estará finalizada e ficará salva no seu dispositivo, conectando-se automaticamente quando estiver na UNIPAMPA com o Wi-Fi do seu dispositivo ligado.
