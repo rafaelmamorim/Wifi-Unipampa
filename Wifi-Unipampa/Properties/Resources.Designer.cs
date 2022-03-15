@@ -99,25 +99,5 @@ namespace Wifi_Unipampa.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
-        /// </summary>
-        internal static byte[] WLANSetEAPUserDatax64 {
-            get {
-                object obj = ResourceManager.GetObject("WLANSetEAPUserDatax64", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
-        /// </summary>
-        internal static byte[] WLANSetEAPUserDatax86 {
-            get {
-                object obj = ResourceManager.GetObject("WLANSetEAPUserDatax86", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }
