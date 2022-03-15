@@ -24,6 +24,7 @@ Este programa tem o objetivo de auxiliar os usuários na configuração da rede 
 
 # Quem fez este projeto existir
 - ATI Angelo Miralha (STIC - Campus Uruguaiana)
+- ATI Carlos André da Silva (STIC - Campus Dom Pedrito)
 - ATI Maurício Fiorenza (DTIC - DIR)
 - ATI Rafael Amorim (Campus Santana do Livramento)
 - TTI Wagner Campos (STIC - Campus Santana do Livramento)
