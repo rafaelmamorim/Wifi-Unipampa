@@ -7,6 +7,7 @@ Este programa tem o objetivo de auxiliar os usuários na configuração da rede 
 # Versões suportadas
 * Windows 7 
 * Windows 10 (21H1)
+* Windows 11
 
 # Requisitos
 * Sistema operacional Windows (7 ou superior)
