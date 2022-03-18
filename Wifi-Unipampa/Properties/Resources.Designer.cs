@@ -81,6 +81,162 @@ namespace Wifi_Unipampa.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Rede sem fio unipampa configurada com sucesso.
+        ///
+        ///Ao fazer a primeira conexão à rede unipampa, será necessário digitar seu usuário e senha institucional.
+        ///
+        ///Caso necessite trocar a senha, acesse o site http://www.unipampa.edu.br/servicos.
+        /// </summary>
+        internal static string mensagemConfiguracaoConcluida {
+            get {
+                return ResourceManager.GetString("mensagemConfiguracaoConcluida", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Criando nova rede Unipampa.
+        /// </summary>
+        internal static string mensagemCriandoRede {
+            get {
+                return ResourceManager.GetString("mensagemCriandoRede", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Não foi possível criar a rede sem fio unipampa.
+        /// </summary>
+        internal static string mensagemCurtaErroCriandoRede {
+            get {
+                return ResourceManager.GetString("mensagemCurtaErroCriandoRede", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Não foi permitido remover a rede unipampa existente.
+        /// </summary>
+        internal static string mensagemCurtaErroRemovendoRedes {
+            get {
+                return ResourceManager.GetString("mensagemCurtaErroRemovendoRedes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Não foi possível conectar a rede sem fio unipampa.
+        /// </summary>
+        internal static string mensagemCurtaErroTentandoConectar {
+            get {
+                return ResourceManager.GetString("mensagemCurtaErroTentandoConectar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Não foi possível criar a rede sem fio unipampa. Tente realizar a configuração manual ou entre em contato com o STIC do Campus.
+        /// </summary>
+        internal static string mensagemLongaErroCriandoRede {
+            get {
+                return ResourceManager.GetString("mensagemLongaErroCriandoRede", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Não foi permitido remover a rede unipampa existente. Tente realizar a configuração manual da rede ou entre em contato com o STIC do Campus.
+        /// </summary>
+        internal static string mensagemLongaErroRemovendoRedes {
+            get {
+                return ResourceManager.GetString("mensagemLongaErroRemovendoRedes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Não foi possível conectar a rede sem fio unipampa.
+        /// </summary>
+        internal static string mensagemLongaErroTentandoConectar {
+            get {
+                return ResourceManager.GetString("mensagemLongaErroTentandoConectar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Nenhum dispositivo de rede sem fio ativo encontrado neste equipamento.
+        /// </summary>
+        internal static string mensagemNenhumDispositivoWifi {
+            get {
+                return ResourceManager.GetString("mensagemNenhumDispositivoWifi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Excluindo redes Unipampa existentes.
+        /// </summary>
+        internal static string mensagemRemovendoRedes {
+            get {
+                return ResourceManager.GetString("mensagemRemovendoRedes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Desenvolvido pelo ATI Rafael Amorim (STIC - Campus Santana do Livramento) com auxílio dos colegas:
+        ///- ATI Angelo Miralha (STIC - Campus Uruguaiana)
+        ///- ATI Carlos André da Silva(STIC - Campus Dom Pedrito)
+        ///- ATI Maurício Fiorenza (DTIC - DIR)
+        ///- TTI Wagner Campos (STIC - Campus Santana do Livramento)
+        ///
+        ///O código fonte deste programa pode ser acessado no link https://github.com/rafaelmamorim/wifi-unipampa
+        ///
+        ///Sugestões e melhorias são bem vindas :-).
+        /// </summary>
+        internal static string mensagemSobreOPrograma {
+            get {
+                return ResourceManager.GetString("mensagemSobreOPrograma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Tentado conectar a rede Unipampa.
+        /// </summary>
+        internal static string mensagemTentandoConectar {
+            get {
+                return ResourceManager.GetString("mensagemTentandoConectar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a unipampa.
+        /// </summary>
+        internal static string nomeRedeSemFio {
+            get {
+                return ResourceManager.GetString("nomeRedeSemFio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Erro.
+        /// </summary>
+        internal static string tituloMensagemErro {
+            get {
+                return ResourceManager.GetString("tituloMensagemErro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Informações sobre este programa.
+        /// </summary>
+        internal static string tituloMensagemSobreOPrograma {
+            get {
+                return ResourceManager.GetString("tituloMensagemSobreOPrograma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Sucesso.
+        /// </summary>
+        internal static string tituloMensagemSucesso {
+            get {
+                return ResourceManager.GetString("tituloMensagemSucesso", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
         /// </summary>
         internal static System.Drawing.Icon wifi_256 {

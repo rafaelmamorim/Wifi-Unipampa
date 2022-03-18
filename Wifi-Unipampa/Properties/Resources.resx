@@ -130,4 +130,64 @@
   <data name="ManagedWifi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ManagedWifi.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="mensagemConfiguracaoConcluida" xml:space="preserve">
+    <value>Rede sem fio unipampa configurada com sucesso.
+
+Ao fazer a primeira conexão à rede unipampa, será necessário digitar seu usuário e senha institucional.
+
+Caso necessite trocar a senha, acesse o site http://www.unipampa.edu.br/servicos</value>
+  </data>
+  <data name="mensagemCriandoRede" xml:space="preserve">
+    <value>Criando nova rede Unipampa</value>
+  </data>
+  <data name="mensagemCurtaErroCriandoRede" xml:space="preserve">
+    <value>Não foi possível criar a rede sem fio unipampa</value>
+  </data>
+  <data name="mensagemCurtaErroRemovendoRedes" xml:space="preserve">
+    <value>Não foi permitido remover a rede unipampa existente</value>
+  </data>
+  <data name="mensagemCurtaErroTentandoConectar" xml:space="preserve">
+    <value>Não foi possível conectar a rede sem fio unipampa</value>
+  </data>
+  <data name="mensagemLongaErroCriandoRede" xml:space="preserve">
+    <value>Não foi possível criar a rede sem fio unipampa. Tente realizar a configuração manual ou entre em contato com o STIC do Campus</value>
+  </data>
+  <data name="mensagemLongaErroRemovendoRedes" xml:space="preserve">
+    <value>Não foi permitido remover a rede unipampa existente. Tente realizar a configuração manual da rede ou entre em contato com o STIC do Campus</value>
+  </data>
+  <data name="mensagemLongaErroTentandoConectar" xml:space="preserve">
+    <value>Não foi possível conectar a rede sem fio unipampa</value>
+  </data>
+  <data name="mensagemNenhumDispositivoWifi" xml:space="preserve">
+    <value>Nenhum dispositivo de rede sem fio ativo encontrado neste equipamento</value>
+  </data>
+  <data name="mensagemRemovendoRedes" xml:space="preserve">
+    <value>Excluindo redes Unipampa existentes</value>
+  </data>
+  <data name="mensagemSobreOPrograma" xml:space="preserve">
+    <value>Desenvolvido pelo ATI Rafael Amorim (STIC - Campus Santana do Livramento) com auxílio dos colegas:
+- ATI Angelo Miralha (STIC - Campus Uruguaiana)
+- ATI Carlos André da Silva(STIC - Campus Dom Pedrito)
+- ATI Maurício Fiorenza (DTIC - DIR)
+- TTI Wagner Campos (STIC - Campus Santana do Livramento)
+
+O código fonte deste programa pode ser acessado no link https://github.com/rafaelmamorim/wifi-unipampa
+
+Sugestões e melhorias são bem vindas :-)</value>
+  </data>
+  <data name="mensagemTentandoConectar" xml:space="preserve">
+    <value>Tentado conectar a rede Unipampa</value>
+  </data>
+  <data name="nomeRedeSemFio" xml:space="preserve">
+    <value>unipampa</value>
+  </data>
+  <data name="tituloMensagemErro" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="tituloMensagemSobreOPrograma" xml:space="preserve">
+    <value>Informações sobre este programa</value>
+  </data>
+  <data name="tituloMensagemSucesso" xml:space="preserve">
+    <value>Sucesso</value>
+  </data>
 </root>

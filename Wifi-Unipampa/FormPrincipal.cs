@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using NativeWifi;
 using System.Reflection;
+using Wifi_Unipampa.Properties;
 
 /***
  * Configurador de Rede Wifi Unipampa
@@ -36,29 +37,16 @@ namespace Wifi_Unipampa
 
         private void buttonConfigurar_Click(object sender, EventArgs e)
         {
-
-            #region  determinando versão do SO  e extraindo executavel do Resources
-            /*if (System.Environment.Is64BitOperatingSystem) 
-            {
-                File.WriteAllBytes(wLanSetupUserDataEXE, Wifi_Unipampa.Properties.Resources.WLANSetEAPUserDatax64);
-            }
-            else
-            {
-                File.WriteAllBytes(wLanSetupUserDataEXE, Wifi_Unipampa.Properties.Resources.WLANSetEAPUserDatax86);
-            }*/
-            #endregion
-
             WlanClient client = new WlanClient();
             if (client.Interfaces.Count() == 0)
             {
-                MessageBox.Show("Nenhum dispositivo de rede sem fio ativo encontrado neste equipamento", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Resources.mensagemNenhumDispositivoWifi, Resources.tituloMensagemErro, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             foreach (WlanClient.WlanInterface wlanIface in client.Interfaces)
             {
 
-                string nomeRede = "unipampa";
                 #region perfilRedeXML
                 string perfilRedeXML = "<?xml version=\"1.0\"?>" +
                                         "<WLANProfile xmlns=\"http://www.microsoft.com/networking/WLAN/profile/v1\">" +
@@ -128,7 +116,7 @@ namespace Wifi_Unipampa
                 #endregion
 
                 //removendo redes unipampa cadastradas
-                labelSituacao.Text = "Excluindo redes Unipampa existentes";
+                labelSituacao.Text = Resources.mensagemRemovendoRedes;
                 try
                 {
                     Wlan.WlanProfileInfo[] redesRegistradas = wlanIface.GetProfiles();
@@ -150,26 +138,42 @@ namespace Wifi_Unipampa
                 }
                 catch (Exception)
                 {
-                    labelSituacao.Text = "Não foi permitido remover a rede unipampa existente";
+                    labelSituacao.Text = Resources.mensagemCurtaErroRemovendoRedes;
+                    MessageBox.Show(Resources.mensagemLongaErroRemovendoRedes, Resources.tituloMensagemErro, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
                 //Criando rede nova
-                labelSituacao.Text = "Criando nova rede Unipampa";
-                wlanIface.SetProfile(Wlan.WlanProfileFlags.AllUser, perfilRedeXML, true);
+                labelSituacao.Text = Resources.mensagemCriandoRede;
+                try
+                {
+                    wlanIface.SetProfile(Wlan.WlanProfileFlags.AllUser, perfilRedeXML, true);
+                }
+                catch (Exception)
+                {
+                    labelSituacao.Text = Resources.mensagemCurtaErroCriandoRede;
+                    MessageBox.Show(Resources.mensagemLongaErroCriandoRede, Resources.tituloMensagemErro, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
                 //tentando conectar a rede nova
-                labelSituacao.Text = "Tentado conectar a rede Unipampa";
-                wlanIface.Connect(Wlan.WlanConnectionMode.Profile, Wlan.Dot11BssType.Any, nomeRede);
+                labelSituacao.Text = Resources.mensagemTentandoConectar;
+                try
+                {
+                    wlanIface.Connect(Wlan.WlanConnectionMode.Profile, Wlan.Dot11BssType.Any, Resources.nomeRedeSemFio);
+                }
+                catch (Exception)
+                {
+                    labelSituacao.Text = Resources.mensagemCurtaErroTentandoConectar;
+                    MessageBox.Show(Resources.mensagemLongaErroTentandoConectar, Resources.tituloMensagemErro, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
 
-                MessageBox.Show("Rede sem fio unipampa configurada com sucesso. \n " +
-                    "Ao fazer a primeira conexão à rede unipampa, será " +
-                    "necessário digitar seu usuário e senha institucional.\n\n" +
-                    "Caso necessite trocar a senha, acesse o site http://www.unipampa.edu.br/servicos", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                MessageBox.Show(Resources.mensagemConfiguracaoConcluida, Resources.tituloMensagemSucesso, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 labelSituacao.Text = "";
             }
         }
-
 
         private void buttonFechar_Click(object sender, EventArgs e)
         {
@@ -178,17 +182,12 @@ namespace Wifi_Unipampa
 
         private void buttonAjuda_Click(object sender, EventArgs e)
         {
-            Process.Start("https://dtic.unipampa.edu.br/redes-wifi/");
+            Process.Start("https://sites.unipampa.edu.br/atendimento/redes-wi-fi/");
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBoxLogoSTIC_Click(object sender, EventArgs e)
         {
-            String stringSobre = "Desenvolvido pelo ATI Rafael Amorim (STIC - Campus Santana do Livramento) com auxílio dos colegas listados abaixo:\n\n" +
-                "- ATI Angelo Miralha (STIC - Campus Uruguaiana)\n" +
-                "- ATI Carlos André da Silva(STIC - Campus Dom Pedrito)\n" +
-                "- ATI Maurício Fiorenza (DTIC - DIR) \n" +
-                "- TTI Wagner Campos (STIC - Campus Santana do Livramento)\n";
-            MessageBox.Show(stringSobre, "Sobre este aplicativo",
+            MessageBox.Show(Resources.mensagemSobreOPrograma, Resources.tituloMensagemSobreOPrograma,
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }

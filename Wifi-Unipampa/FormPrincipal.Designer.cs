@@ -30,47 +30,47 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogoSTIC = new System.Windows.Forms.PictureBox();
             this.buttonConfigurar = new System.Windows.Forms.Button();
             this.buttonFechar = new System.Windows.Forms.Button();
             this.buttonAjuda = new System.Windows.Forms.Button();
             this.labelSituacao = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoSTIC)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.pictureBoxLogo);
+            this.panel1.Controls.Add(this.pictureBoxLogoSTIC);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(170, 217);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox2
+            // pictureBoxLogo
             // 
-            this.pictureBox2.Image = global::Wifi_Unipampa.Properties.Resources.wifi_2561;
-            this.pictureBox2.Location = new System.Drawing.Point(22, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(130, 130);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxLogo.Image = global::Wifi_Unipampa.Properties.Resources.wifi_2561;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(22, 0);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(130, 130);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogo.TabIndex = 5;
+            this.pictureBoxLogo.TabStop = false;
             // 
-            // pictureBox1
+            // pictureBoxLogoSTIC
             // 
-            this.pictureBox1.Image = global::Wifi_Unipampa.Properties.Resources.logo_stic_2;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 167);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 41);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBoxLogoSTIC.Image = global::Wifi_Unipampa.Properties.Resources.logo_stic_2;
+            this.pictureBoxLogoSTIC.Location = new System.Drawing.Point(10, 167);
+            this.pictureBoxLogoSTIC.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBoxLogoSTIC.Name = "pictureBoxLogoSTIC";
+            this.pictureBoxLogoSTIC.Size = new System.Drawing.Size(150, 41);
+            this.pictureBoxLogoSTIC.TabIndex = 4;
+            this.pictureBoxLogoSTIC.TabStop = false;
+            this.pictureBoxLogoSTIC.Click += new System.EventHandler(this.pictureBoxLogoSTIC_Click);
             // 
             // buttonConfigurar
             // 
@@ -131,8 +131,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configurar rede wi-fi unipampa";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoSTIC)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,10 +143,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonConfigurar;
         private System.Windows.Forms.Button buttonFechar;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxLogoSTIC;
         private System.Windows.Forms.Button buttonAjuda;
         private System.Windows.Forms.Label labelSituacao;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
     }
 }
 
