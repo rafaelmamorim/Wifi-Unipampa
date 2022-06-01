@@ -30,4 +30,4 @@ Este programa tem o objetivo de auxiliar os usuários na configuração da rede 
 - TTI Wagner Campos (STIC - Campus Santana do Livramento)
 
 # Outras informações
-* https://dtic.unipampa.edu.br/redes-wifi/
+* https://sites.unipampa.edu.br/atendimento/redes-wi-fi/
